@@ -1,0 +1,17 @@
+﻿  main.cpp
+d:\google диск\учёба\филп\кормильцев данил\allocators\linear.h(62): warning C4018: >: несоответствие типов со знаком и без знака
+  d:\google диск\учёба\филп\кормильцев данил\allocators\linear.h(61): note: при компиляции функции-члена "<Нет данных>" класса класс <Нет данных>
+  d:\google диск\учёба\филп\кормильцев данил\allocators\main.cpp(25): note: выполняется компиляция ссылки на экземпляр шаблон функции "TElement linear<TElement>::get(int)"
+          with
+          [
+              TElement=int
+          ]
+  d:\google диск\учёба\филп\кормильцев данил\allocators\main.cpp(21): note: выполняется компиляция ссылки на экземпляр шаблон класс "linear<int>"
+d:\google диск\учёба\филп\кормильцев данил\allocators\linear.h(53): warning C4018: >: несоответствие типов со знаком и без знака
+  d:\google диск\учёба\филп\кормильцев данил\allocators\linear.h(52): note: при компиляции функции-члена "<Нет данных>" класса класс <Нет данных>
+  d:\google диск\учёба\филп\кормильцев данил\allocators\main.cpp(26): note: выполняется компиляция ссылки на экземпляр шаблон функции "void linear<int>::set(int,TElement)"
+          with
+          [
+              TElement=int
+          ]
+  Allocators.vcxproj -> D:\Google Диск\Учёба\ФИЛП\Кормильцев Данил\Debug\Allocators.exe
