@@ -1,0 +1,28 @@
+﻿  ConsoleApplication1.cpp
+C:\Users\dudya\source\repos\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(143): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\dudya\source\repos\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(148): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\dudya\source\repos\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(152): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\dudya\source\repos\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(157): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\dudya\source\repos\ConsoleApplication1\ConsoleApplication1\Source1.cpp(46): error C2819: тип "Node<T>" не имеет перегруженный "operator ->"
+          with
+          [
+              T=int
+          ]
+  C:\Users\dudya\source\repos\ConsoleApplication1\ConsoleApplication1\Source1.cpp(73): note:  см. объявление "Node<T>"
+          with
+          [
+              T=int
+          ]
+  C:\Users\dudya\source\repos\ConsoleApplication1\ConsoleApplication1\Source1.cpp(46): note: возможно, имеется в виду "."
+  C:\Users\dudya\source\repos\ConsoleApplication1\ConsoleApplication1\Source1.cpp(39): note: при компиляции функции-члена "<Нет данных>" класса класс <Нет данных>
+  C:\Users\dudya\source\repos\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(163): note: выполняется компиляция ссылки на экземпляр шаблон функции "void LinkedList<int>::add(T)"
+          with
+          [
+              T=int
+          ]
+  C:\Users\dudya\source\repos\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(161): note: выполняется компиляция ссылки на экземпляр шаблон класс "LinkedList<int>"
+C:\Users\dudya\source\repos\ConsoleApplication1\ConsoleApplication1\Source1.cpp(46): error C2232: ->Node<T>::next: левый операнд имеет тип "class", используйте "."
+          with
+          [
+              T=int
+          ]
