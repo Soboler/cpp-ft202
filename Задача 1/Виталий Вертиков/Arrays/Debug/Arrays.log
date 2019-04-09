@@ -1,0 +1,11 @@
+﻿  pch.cpp
+  LinearArray.cpp
+  LinkedArray.cpp
+c:\users\vital\desktop\учеба\филп\arrays\arrays\linkedarray.cpp(98): warning C4018: >: несоответствие типов со знаком и без знака
+  Main.cpp
+  StackArray.cpp
+c:\users\vital\desktop\учеба\филп\arrays\arrays\stackarray.cpp(2): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+  Создание кода...
+c:\users\vital\desktop\учеба\филп\arrays\arrays\linkedarray.cpp(35): warning C4715: LinkedArr::get: значение возвращается не при всех путях выполнения
+c:\users\vital\desktop\учеба\филп\arrays\arrays\lineararray.cpp(19): warning C4715: LinearArr::get: значение возвращается не при всех путях выполнения
+  Arrays.vcxproj -> C:\Users\vital\Desktop\Учеба\филп\Arrays\Debug\Arrays.exe
