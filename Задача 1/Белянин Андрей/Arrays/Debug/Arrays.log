@@ -1,0 +1,4 @@
+﻿  pch.cpp
+  Arrays.cpp
+d:\projects\visual studio\arrays\arrays\arrays.cpp(236): warning C4715: linked::get: значение возвращается не при всех путях выполнения
+  Arrays.vcxproj -> D:\Projects\Visual Studio\Arrays\Debug\Arrays.exe
