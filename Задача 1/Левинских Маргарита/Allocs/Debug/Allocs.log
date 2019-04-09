@@ -1,0 +1,5 @@
+﻿  LinearAlloc.cpp
+e:\учеба\ка\allocs\allocs\linearalloc.cpp(21): warning C4244: =: преобразование "double" в "size_t", возможна потеря данных
+e:\учеба\ка\allocs\allocs\linearalloc.cpp(41): warning C4018: <=: несоответствие типов со знаком и без знака
+e:\учеба\ка\allocs\allocs\linearalloc.cpp(108): warning C4018: >: несоответствие типов со знаком и без знака
+  Allocs.vcxproj -> E:\Учеба\КА\Allocs\Debug\Allocs.exe
