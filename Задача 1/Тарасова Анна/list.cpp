@@ -95,11 +95,9 @@ T LinkedList<T>::get(int id)
         throw range_error("No such id in list");
     }
     Element<T> *currentElement = firstElement;
-    int i = 0;
-    while (i != id)
+    for(int i = 0; i != id; i++)
     {
         currentElement = currentElement->next;
-        i++;
     }
 
     return currentElement->value;
@@ -114,11 +112,9 @@ void LinkedList<T>::set(int id, T value)
     }
 
     Element<T> *currentElement = firstElement;
-    int i = 0;
-    while (i != id)
+    for(int i = 0; i != id; i++)
     {
         currentElement = currentElement->next;
-        i++;
     }
 
     currentElement->value = value;
