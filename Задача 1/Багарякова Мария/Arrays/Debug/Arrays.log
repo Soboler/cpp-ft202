@@ -1,0 +1,11 @@
+﻿  pch.cpp
+  Arrays.cpp
+c:\users\мария\source\repos\arrays\arrays\arrays.cpp(7): warning C4244: инициализация: преобразование "double" в "size_t", возможна потеря данных
+c:\users\мария\source\repos\arrays\arrays\arrays.cpp(15): warning C4018: >=: несоответствие типов со знаком и без знака
+c:\users\мария\source\repos\arrays\arrays\arrays.cpp(16): warning C4018: >=: несоответствие типов со знаком и без знака
+c:\users\мария\source\repos\arrays\arrays\arrays.cpp(29): warning C4018: <: несоответствие типов со знаком и без знака
+c:\users\мария\source\repos\arrays\arrays\arrays.cpp(37): warning C4244: =: преобразование "double" в "size_t", возможна потеря данных
+c:\users\мария\source\repos\arrays\arrays\arrays.cpp(49): warning C4244: инициализация: преобразование "double" в "size_t", возможна потеря данных
+c:\users\мария\source\repos\arrays\arrays\arrays.cpp(81): warning C4244: =: преобразование "double" в "size_t", возможна потеря данных
+c:\users\мария\source\repos\arrays\arrays\arrays.cpp(120): warning C4018: <: несоответствие типов со знаком и без знака
+  Arrays.vcxproj -> C:\Users\Мария\source\repos\Arrays\Debug\Arrays.exe
