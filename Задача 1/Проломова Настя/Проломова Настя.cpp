@@ -12,8 +12,8 @@ private:
 	void resize() {
 		SIZE *= 2;
 		int *ptr = (int*)malloc(SIZE);
-		for (int i = 0; i < offset; i += int_size) {
-			*(ptr + i) = *(startPtr + i);
+		for (int i = 0; i < offset; i ++) {
+			*(ptr + i * int_size) = *(startPtr + i * int_size);
 		}
 		free(startPtr);
 		startPtr = ptr;
@@ -28,7 +28,7 @@ public:
 	}
 
 	void set(size_t index, int value) {
-		if (offset > SIZE * 0.75)
+		if (offset * int_size > SIZE * 0.75)
 			resize();
 		startPtr[index] = value;
 		offset++;
@@ -64,8 +64,8 @@ private:
 	void resize() {
 		SIZE *= 2;
 		int *ptr = (int*)malloc(SIZE);
-		for (int i = 0; i < offset; i += int_size) {
-			*(ptr + i) = *(startPtr + i);
+		for (int i = 0; i < offset; i++) {
+			*(ptr + i * int_size) = *(startPtr + i * int_size);
 		}
 		free(startPtr);
 		startPtr = ptr;
@@ -79,7 +79,7 @@ public:
 	}
 
 	void push_back(int value) {
-		if (offset > SIZE * 0.75)
+		if (offset *int_size > SIZE * 0.75)
 			resize();
 		startPtr[offset] = value;
 		offset++;
