@@ -1,0 +1,4 @@
+﻿  StackArray.cpp
+c:\codevm\alloc\alloc\stackarray.cpp(33): warning C4715: StackArray::pop: значение возвращается не при всех путях выполнения
+  Alloc.vcxproj -> C:\CodeVM\Alloc\Debug\Alloc.exe
+  Alloc.vcxproj -> C:\CodeVM\Alloc\Debug\Alloc.pdb (Partial PDB)
