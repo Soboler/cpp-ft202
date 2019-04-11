@@ -2,6 +2,7 @@
 #include <iostream>
 #include "Alloc.cpp"
 #include "Stack.cpp"
+#include"LinkedList.cpp"
 
 
 int main()
@@ -26,4 +27,14 @@ int main()
 	std::cout << s.pop_back() << std::endl;
 	s.remove_all(1024);
 	s.pop();
+	
+	LinkedList l = LinkedList();
+	l.set(1, 2);
+	l.push_back(45);
+	std::cout << l.pop() << std::endl;
+	l.set(10, 5);
+	std::cout << l.get(1) << std::endl;
+	std::cout << l.pop_back() << std::endl;
+	l.remove_all();
+	l.pop_back();
 }
