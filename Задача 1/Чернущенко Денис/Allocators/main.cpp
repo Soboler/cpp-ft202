@@ -1,3 +1,17 @@
+#include "gtest/gtest.h"
+#include <gmock/gmock.h>
+
+int main(int argc, char* argv[])
+{
+    testing::InitGoogleTest(&argc, argv);
+    return RUN_ALL_TESTS();
+}
+
+
+// Для проверки без тестов раскомментировать:
+
+
+/*
 #include <iostream>
 #include "Allocator.h"
 #include "LinearAllocator.h"
@@ -5,6 +19,26 @@
 #include "LinkedListAllocator.h"
 
 using namespace std;
+
+void testAllocator(Allocator& allocator);
+
+int main()
+{
+    LinearAllocator linearAllocator;
+    StackAllocator stackAllocator;
+    LinkedListAllocator linkedListAllocator;
+
+    Allocator* allocators[] = {&linearAllocator, &stackAllocator, &linkedListAllocator};
+
+    for (auto & allocator : allocators)
+    {
+        testAllocator(*allocator);
+
+        cout << endl << "--------------------------------------" << endl;
+    }
+
+    return 0;
+}
 
 void testAllocator(Allocator& allocator)
 {
@@ -43,21 +77,4 @@ void testAllocator(Allocator& allocator)
     cout << "arr.getMemoryBlockSize(): " << allocator.getMemoryBlockSize() << endl;
     cout << "arr.getMemoryBlockCapacity(): " << allocator.getMemoryBlockCapacity() << endl;
 }
-
-int main()
-{
-    LinearAllocator linearAllocator;
-    StackAllocator stackAllocator;
-    LinkedListAllocator linkedListAllocator;
-
-    Allocator* allocators[] = {&linearAllocator, &stackAllocator, &linkedListAllocator};
-
-    for (auto & allocator : allocators)
-    {
-        testAllocator(*allocator);
-
-        cout << endl << "--------------------------------------" << endl;
-    }
-
-    return 0;
-}
+*/
