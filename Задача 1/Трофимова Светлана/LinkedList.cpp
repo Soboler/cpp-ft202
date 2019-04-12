@@ -107,7 +107,10 @@ public:
 			free(curr_node);
 			curr_node = child;
 		}
-		start = NULL;
-		end = NULL;
+		start = (Node*)malloc(sizeof(Node));
+		start->value = 0;
+		start->left = NULL;
+		start->right = NULL;
+		end = start;
 	}
 };
