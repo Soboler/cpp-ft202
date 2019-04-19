@@ -1,0 +1,4 @@
+"C:\Program Files\JetBrains\CLion 2019.1\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_CXX_COMPILER=C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/g++.exe" -G "CodeBlocks - MinGW Makefiles" C:\Users\alogi\CLionProjects\buddy_memory_allocation
+-- Configuring done
+-- Generating done
+-- Build files have been written to: C:/Users/alogi/CLionProjects/buddy_memory_allocation/cmake-build-debug

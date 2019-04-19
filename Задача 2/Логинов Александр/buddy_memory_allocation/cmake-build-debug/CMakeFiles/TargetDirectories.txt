@@ -1,0 +1,3 @@
+C:/Users/alogi/CLionProjects/buddy_memory_allocation/cmake-build-debug/CMakeFiles/buddy_memory_allocation.dir
+C:/Users/alogi/CLionProjects/buddy_memory_allocation/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/alogi/CLionProjects/buddy_memory_allocation/cmake-build-debug/CMakeFiles/rebuild_cache.dir
