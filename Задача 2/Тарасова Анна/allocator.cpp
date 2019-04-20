@@ -64,10 +64,7 @@ void Allocator::Free(void *ptr)
         throw invalid_argument("Block is not allocated");
     }
 
-
     nodeToFree->isAvailable = true;
-    
-    
     freeParent(nodeToFree);
 }
 
@@ -205,8 +202,6 @@ void *Allocator::Alloc(size_t allocationSize)
     void *resultPointer = NULL;
     size_t blockSize = findBlockSize(allocationSize);
     resultPointer = findAvailableBlock(blockSize)->blockPointer;
-    
-
     return resultPointer; 
 }
 
@@ -223,7 +218,6 @@ size_t Allocator::findBlockSize(size_t allocationSize)
     }
     for (size_t i = 0; i <= log2(minBlockSize); i++)
     {
-
         if (allocationSize > allocatorSize / pow(2, i))
         {
             blockSize = allocatorSize / pow(2, --i);
