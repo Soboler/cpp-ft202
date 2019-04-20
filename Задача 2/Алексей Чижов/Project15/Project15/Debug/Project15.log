@@ -1,0 +1,3 @@
+﻿  Source.cpp
+c:\users\alexey\source\repos\project15\project15\source.cpp(110): warning C4018: '<=': signed/unsigned mismatch
+  Project15.vcxproj -> C:\Users\Alexey\source\repos\Project15\Debug\Project15.exe
