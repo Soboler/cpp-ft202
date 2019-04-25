@@ -1,12 +1,14 @@
 #ifndef BUDDYALLOCATOR_BLOCKSTATUS_H
 #define BUDDYALLOCATOR_BLOCKSTATUS_H
 
-enum BlockStatus
+
+enum BlockStatus : char
 {
-    Free,
-    Reserved,
-    Split,
-    Unallocated,
+    Free = 'F',
+    Reserved = 'R',
+    Split = 'S',
+    Unallocated = 'U',
 };
+
 
 #endif //BUDDYALLOCATOR_BLOCKSTATUS_H

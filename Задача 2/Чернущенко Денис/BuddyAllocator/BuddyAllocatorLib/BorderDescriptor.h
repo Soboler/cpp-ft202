@@ -15,4 +15,5 @@ struct BorderDescriptor
     BorderDescriptor* previous = nullptr;
 };
 
+
 #endif //BUDDYALLOCATOR_BORDERDESCRIPTOR_H
