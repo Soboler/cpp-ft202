@@ -9,21 +9,21 @@ static std::map<int, bool>CreatedObjectsMap;
 
 struct TestClass
 {
-    int x = -1;
+    int number = -1;
 
-    explicit TestClass(int x) : x(x)
+    explicit TestClass(int number) : number(number)
     {
-        CreatedObjectsMap[x] = true;
+        CreatedObjectsMap[number] = true;
 #ifdef DEBUG
-        printf("Created object(x = %d)\n", x);
+        printf("Created object(number %d)\n", number);
 #endif
     }
 
     ~TestClass()
     {
-        CreatedObjectsMap[x] = false;
+        CreatedObjectsMap[number] = false;
 #ifdef DEBUG
-        printf("Deleted object(x = %d)\n", x);
+        printf("Deleted object(number %d)\n", number);
 #endif
     }
 };
@@ -31,8 +31,8 @@ struct TestClass
 void rewriteMap(int pairsCount)
 {
     CreatedObjectsMap.clear();
-    for (int i = 0; i < pairsCount; ++i)
-        CreatedObjectsMap.insert( { i, true } );
+    for (int number = 0; number < pairsCount; ++number)
+        CreatedObjectsMap.insert( { number, true } );
 }
 
 TEST(SmartPointer, Constructor)
@@ -79,7 +79,7 @@ TEST(SmartPointer, ArrowOperator)
     {
         SmartPointer<TestClass> p1(new TestClass(0));
 
-        ASSERT_EQ(p1->x, 0);
+        ASSERT_EQ(p1->number, 0);
     }
 }
 
@@ -89,7 +89,7 @@ TEST(SmartPointer, DereferenceOperator)
     {
         SmartPointer<TestClass> p1(new TestClass(0));
 
-        ASSERT_EQ((*p1).x, 0);
+        ASSERT_EQ((*p1).number, 0);
     }
 }
 
@@ -99,7 +99,7 @@ TEST(SmartPointer, Get)
     {
         SmartPointer<TestClass> p1(new TestClass(0));
 
-        ASSERT_EQ(p1.Get().x, 0);
+        ASSERT_EQ(p1.Get().number, 0);
     }
 }
 
@@ -112,8 +112,8 @@ TEST(SmartPointer, Set)
 
         p1.Set(new TestClass(999));
 
-        ASSERT_EQ(p1->x, 999);
-        ASSERT_EQ(p2->x, 0);
+        ASSERT_EQ(p1->number, 999);
+        ASSERT_EQ(p2->number, 0);
     }
 
     for (auto pair : CreatedObjectsMap)
@@ -129,7 +129,7 @@ TEST(SmartPointer, Release)
 
         p1.Release();
 
-        ASSERT_THROW(p1->x, std::runtime_error);
-        ASSERT_EQ(p2->x, 0);
+        ASSERT_THROW(p1->number, std::runtime_error);
+        ASSERT_EQ(p2->number, 0);
     }
 }

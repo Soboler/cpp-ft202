@@ -49,8 +49,7 @@ public:
 
     void Set(T* pointerToNewObject)
     {
-        if (basePointer == nullptr) throw std::runtime_error(nullptrErrorMessage);
-        Release();
+        if (basePointer != nullptr) Release();
 
         basePointer = pointerToNewObject;
         pointersCount = new size_t(1);
