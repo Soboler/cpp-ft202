@@ -1,0 +1,5 @@
+﻿  SmartPtr.cpp
+c:\users\мария\source\repos\smartptr\smartptr\smartptr.cpp(85): warning C4477: "printf": в строке форматирования "%i" требуется аргумент типа "int", но вариативный аргумент "1" имеет тип "SmartPointer<int>"
+c:\users\мария\source\repos\smartptr\smartptr\smartptr.cpp(87): warning C4477: "printf": в строке форматирования "%i" требуется аргумент типа "int", но вариативный аргумент "1" имеет тип "SmartPointer<int>"
+c:\users\мария\source\repos\smartptr\smartptr\smartptr.cpp(99): warning C4477: "printf": в строке форматирования "%i" требуется аргумент типа "int", но вариативный аргумент "1" имеет тип "SmartPointer<int>"
+  SmartPtr.vcxproj -> C:\Users\Мария\source\repos\SmartPtr\Debug\SmartPtr.exe
